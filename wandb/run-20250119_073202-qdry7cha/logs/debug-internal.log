@@ -1,0 +1,8 @@
+{"time":"2025-01-19T07:32:02.213675798Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T07:32:02.213692198Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_073202-qdry7cha/logs/debug-core.log"}
+{"time":"2025-01-19T07:32:02.424224889Z","level":"INFO","msg":"created new stream","id":"qdry7cha"}
+{"time":"2025-01-19T07:32:02.424414773Z","level":"INFO","msg":"stream: started","id":"qdry7cha"}
+{"time":"2025-01-19T07:32:02.424434754Z","level":"INFO","msg":"writer: Do: started","stream_id":"qdry7cha"}
+{"time":"2025-01-19T07:32:02.424446844Z","level":"INFO","msg":"sender: started","stream_id":"qdry7cha"}
+{"time":"2025-01-19T07:32:02.424439754Z","level":"INFO","msg":"handler: started","stream_id":"qdry7cha"}
+{"time":"2025-01-19T07:32:02.657467996Z","level":"INFO","msg":"Starting system monitor"}

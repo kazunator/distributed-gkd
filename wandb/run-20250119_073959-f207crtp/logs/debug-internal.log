@@ -1,0 +1,8 @@
+{"time":"2025-01-19T07:39:59.348629716Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T07:39:59.348641587Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_073959-f207crtp/logs/debug-core.log"}
+{"time":"2025-01-19T07:39:59.560073807Z","level":"INFO","msg":"created new stream","id":"f207crtp"}
+{"time":"2025-01-19T07:39:59.560121179Z","level":"INFO","msg":"stream: started","id":"f207crtp"}
+{"time":"2025-01-19T07:39:59.56016841Z","level":"INFO","msg":"sender: started","stream_id":"f207crtp"}
+{"time":"2025-01-19T07:39:59.56019972Z","level":"INFO","msg":"handler: started","stream_id":"f207crtp"}
+{"time":"2025-01-19T07:39:59.56016821Z","level":"INFO","msg":"writer: Do: started","stream_id":"f207crtp"}
+{"time":"2025-01-19T07:39:59.802824266Z","level":"INFO","msg":"Starting system monitor"}

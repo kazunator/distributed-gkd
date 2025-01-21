@@ -1,0 +1,8 @@
+{"time":"2025-01-19T10:58:23.206553815Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T10:58:23.206567635Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_105823-ar20xkew/logs/debug-core.log"}
+{"time":"2025-01-19T10:58:23.517217025Z","level":"INFO","msg":"created new stream","id":"ar20xkew"}
+{"time":"2025-01-19T10:58:23.517266806Z","level":"INFO","msg":"stream: started","id":"ar20xkew"}
+{"time":"2025-01-19T10:58:23.517291847Z","level":"INFO","msg":"handler: started","stream_id":"ar20xkew"}
+{"time":"2025-01-19T10:58:23.517298307Z","level":"INFO","msg":"sender: started","stream_id":"ar20xkew"}
+{"time":"2025-01-19T10:58:23.517293707Z","level":"INFO","msg":"writer: Do: started","stream_id":"ar20xkew"}
+{"time":"2025-01-19T10:58:23.917765198Z","level":"INFO","msg":"Starting system monitor"}

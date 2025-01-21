@@ -1,0 +1,38 @@
+
+Starting epoch 1/3
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 168, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 129, in main
+    stats = trainer.train_epoch(train_loader, epoch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 232, in train_epoch
+    loss_dict = self.train_step(batch, use_on_policy)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 204, in train_step
+    loss_dict = self.compute_loss(
+                ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 161, in compute_loss
+    gkd_loss = self.generalized_jsd_loss(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 97, in generalized_jsd_loss
+    torch.stack([
+RuntimeError: stack expects each tensor to be equal size, but got [1, 209, 99999] at entry 0 and [1, 209, 152064] at entry 1
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 168, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 129, in main
+[rank0]:     stats = trainer.train_epoch(train_loader, epoch)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 232, in train_epoch
+[rank0]:     loss_dict = self.train_step(batch, use_on_policy)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 204, in train_step
+[rank0]:     loss_dict = self.compute_loss(
+[rank0]:                 ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 161, in compute_loss
+[rank0]:     gkd_loss = self.generalized_jsd_loss(
+[rank0]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 97, in generalized_jsd_loss
+[rank0]:     torch.stack([
+[rank0]: RuntimeError: stack expects each tensor to be equal size, but got [1, 209, 99999] at entry 0 and [1, 209, 152064] at entry 1

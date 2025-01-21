@@ -1,0 +1,16 @@
+{"time":"2025-01-19T20:06:06.488970771Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T20:06:06.488983061Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_200606-ki8j30hd/logs/debug-core.log"}
+{"time":"2025-01-19T20:06:06.800109613Z","level":"INFO","msg":"created new stream","id":"ki8j30hd"}
+{"time":"2025-01-19T20:06:06.800167505Z","level":"INFO","msg":"stream: started","id":"ki8j30hd"}
+{"time":"2025-01-19T20:06:06.800189855Z","level":"INFO","msg":"sender: started","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:06:06.800191635Z","level":"INFO","msg":"writer: Do: started","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:06:06.800220216Z","level":"INFO","msg":"handler: started","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:06:07.171686159Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T20:16:08.764070091Z","level":"INFO","msg":"stream: closing","id":"ki8j30hd"}
+{"time":"2025-01-19T20:16:08.764112241Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T20:16:08.764624203Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T20:16:09.14033099Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T20:16:09.26843372Z","level":"INFO","msg":"handler: closed","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:16:09.268466321Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:16:09.268475261Z","level":"INFO","msg":"sender: closed","stream_id":"ki8j30hd"}
+{"time":"2025-01-19T20:16:09.268571243Z","level":"INFO","msg":"stream: closed","id":"ki8j30hd"}

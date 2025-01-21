@@ -1,0 +1,8 @@
+{"time":"2025-01-19T08:32:56.485596144Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T08:32:56.485609445Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_083256-kuksgsek/logs/debug-core.log"}
+{"time":"2025-01-19T08:32:56.6947193Z","level":"INFO","msg":"created new stream","id":"kuksgsek"}
+{"time":"2025-01-19T08:32:56.694746761Z","level":"INFO","msg":"stream: started","id":"kuksgsek"}
+{"time":"2025-01-19T08:32:56.694770761Z","level":"INFO","msg":"writer: Do: started","stream_id":"kuksgsek"}
+{"time":"2025-01-19T08:32:56.694790562Z","level":"INFO","msg":"handler: started","stream_id":"kuksgsek"}
+{"time":"2025-01-19T08:32:56.694820492Z","level":"INFO","msg":"sender: started","stream_id":"kuksgsek"}
+{"time":"2025-01-19T08:32:56.927843978Z","level":"INFO","msg":"Starting system monitor"}

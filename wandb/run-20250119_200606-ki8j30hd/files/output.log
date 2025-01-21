@@ -1,0 +1,45 @@
+
+Starting epoch 1/3
+[Rank 0] Starting epoch 0
+[Rank 0] Processing batch 0/16
+[Rank 0] Starting train_step
+/home/ubuntu/.venv/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py:315: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+The attention layers in this model are transitioning from computing the RoPE embeddings internally through `position_ids` (2D tensor with the indexes of the tokens), to using externally computed `position_embeddings` (Tuple of tensors, containing cos and sin). In v4.46 `position_ids` will be removed and `position_embeddings` will be mandatory.
+SHAPES:  torch.Size([1, 210, 8192]) torch.Size([1, 210]) torch.Size([1, 1, 210, 210])
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 251, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 212, in main
+    stats = trainer.train_epoch(train_loader, epoch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 355, in train_epoch
+    loss_dict = self.train_step(batch, use_on_policy)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 323, in train_step
+    dist.barrier()
+  File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4159, in barrier
+    work = group.barrier(opts=opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [Rank 0]: Ranks 1 failed to pass monitoredBarrier in 600000 ms
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 251, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 212, in main
+[rank0]:     stats = trainer.train_epoch(train_loader, epoch)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 355, in train_epoch
+[rank0]:     loss_dict = self.train_step(batch, use_on_policy)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 323, in train_step
+[rank0]:     dist.barrier()
+[rank0]:   File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4159, in barrier
+[rank0]:     work = group.barrier(opts=opts)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: [Rank 0]: Ranks 1 failed to pass monitoredBarrier in 600000 ms

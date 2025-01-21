@@ -1,0 +1,16 @@
+{"time":"2025-01-19T11:09:30.093872113Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T11:09:30.093884124Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_110930-eramd2wi/logs/debug-core.log"}
+{"time":"2025-01-19T11:09:30.405492782Z","level":"INFO","msg":"created new stream","id":"eramd2wi"}
+{"time":"2025-01-19T11:09:30.405876201Z","level":"INFO","msg":"handler: started","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:30.405878451Z","level":"INFO","msg":"stream: started","id":"eramd2wi"}
+{"time":"2025-01-19T11:09:30.405892791Z","level":"INFO","msg":"sender: started","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:30.405896301Z","level":"INFO","msg":"writer: Do: started","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:30.7421821Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T11:09:45.745104065Z","level":"INFO","msg":"stream: closing","id":"eramd2wi"}
+{"time":"2025-01-19T11:09:45.745135825Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T11:09:45.747320923Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T11:09:46.191921692Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T11:09:46.342131712Z","level":"INFO","msg":"handler: closed","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:46.342162393Z","level":"INFO","msg":"writer: Close: closed","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:46.342208944Z","level":"INFO","msg":"sender: closed","stream_id":"eramd2wi"}
+{"time":"2025-01-19T11:09:46.342240795Z","level":"INFO","msg":"stream: closed","id":"eramd2wi"}

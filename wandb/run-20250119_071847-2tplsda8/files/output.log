@@ -1,0 +1,20 @@
+
+Starting epoch 1/3
+
+Epoch 1 stats:
+total_loss: 0.0000
+gkd_loss: 0.0000
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 160, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 140, in main
+    'model_state_dict': student_model.module.state_dict(),
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'module'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 160, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 140, in main
+[rank0]:     'model_state_dict': student_model.module.state_dict(),
+[rank0]:                         ^^^^^^^^^^^^^^^^^^^^
+[rank0]: AttributeError: 'NoneType' object has no attribute 'module'

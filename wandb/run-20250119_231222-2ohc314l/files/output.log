@@ -1,0 +1,9 @@
+
+Starting epoch 1/3
+[Rank 0] Starting epoch 0
+[Rank 0] Processing batch 0/125
+[Rank 0] Starting train_step
+/home/ubuntu/.venv/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py:315: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+The attention layers in this model are transitioning from computing the RoPE embeddings internally through `position_ids` (2D tensor with the indexes of the tokens), to using externally computed `position_embeddings` (Tuple of tensors, containing cos and sin). In v4.46 `position_ids` will be removed and `position_embeddings` will be mandatory.
+SHAPES:  torch.Size([1, 232, 8192]) torch.Size([1, 232]) torch.Size([1, 1, 232, 232])

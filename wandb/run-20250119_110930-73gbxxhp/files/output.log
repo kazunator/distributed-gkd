@@ -1,0 +1,30 @@
+[Rank 1] Starting epoch 0
+[Rank 1] Processing batch 0/16
+[Rank 1] Starting train_step
+[Rank 1] Creating dummy student outputs
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 213, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 174, in main
+    stats = trainer.train_epoch(train_loader, epoch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 330, in train_epoch
+    loss_dict = self.train_step(batch, use_on_policy)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 220, in train_step
+    rotary_emb = self.teacher.layers[0].self_attn.rotary_emb
+                 ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'layers'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 213, in <module>
+[rank1]:     main()
+[rank1]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 174, in main
+[rank1]:     stats = trainer.train_epoch(train_loader, epoch)
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 330, in train_epoch
+[rank1]:     loss_dict = self.train_step(batch, use_on_policy)
+[rank1]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 220, in train_step
+[rank1]:     rotary_emb = self.teacher.layers[0].self_attn.rotary_emb
+[rank1]:                  ^^^^^^^^^^^^^^^^^^^
+[rank1]: AttributeError: 'NoneType' object has no attribute 'layers'

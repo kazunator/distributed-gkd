@@ -1,0 +1,7 @@
+
+Starting epoch 1/3
+[Rank 0] Starting epoch 0
+[Rank 0] Processing batch 0/16
+[Rank 0] Starting train_step
+[Rank 0] Creating dummy student outputs
+torch.float16 torch.int64

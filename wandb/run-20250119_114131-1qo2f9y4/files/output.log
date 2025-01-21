@@ -1,0 +1,36 @@
+
+Starting epoch 1/3
+[Rank 0] Starting epoch 0
+[Rank 0] Processing batch 0/16
+[Rank 0] Starting train_step
+[Rank 0] Creating dummy student outputs
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 251, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 212, in main
+    stats = trainer.train_epoch(train_loader, epoch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 347, in train_epoch
+    loss_dict = self.train_step(batch, use_on_policy)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 227, in train_step
+    torch.zeros(batch_size, seq_length, rotary_emb.head_dim, device=self.device),
+                                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'Qwen2RotaryEmbedding' object has no attribute 'head_dim'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 251, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 212, in main
+[rank0]:     stats = trainer.train_epoch(train_loader, epoch)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 347, in train_epoch
+[rank0]:     loss_dict = self.train_step(batch, use_on_policy)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 227, in train_step
+[rank0]:     torch.zeros(batch_size, seq_length, rotary_emb.head_dim, device=self.device),
+[rank0]:                                         ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+[rank0]:     raise AttributeError(
+[rank0]: AttributeError: 'Qwen2RotaryEmbedding' object has no attribute 'head_dim'

@@ -1,0 +1,32 @@
+
+Starting epoch 1/3
+[Rank 0] Starting epoch 0
+[Rank 0] Processing batch 0/16
+[Rank 0] Starting train_step
+[Rank 0] Creating dummy student outputs
+Traceback (most recent call last):
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 177, in <module>
+    main()
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 138, in main
+    stats = trainer.train_epoch(train_loader, epoch)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 262, in train_epoch
+    loss_dict = self.train_step(batch, use_on_policy)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 212, in train_step
+    print(teacher_outputs.dtype, shape_tensor.dtype)
+          ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CausalLMOutputWithPast' object has no attribute 'dtype'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 177, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/main.py", line 138, in main
+[rank0]:     stats = trainer.train_epoch(train_loader, epoch)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 262, in train_epoch
+[rank0]:     loss_dict = self.train_step(batch, use_on_policy)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/ubuntu/alphacoder-latest/distributed_gkd/trainer.py", line 212, in train_step
+[rank0]:     print(teacher_outputs.dtype, shape_tensor.dtype)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^
+[rank0]: AttributeError: 'CausalLMOutputWithPast' object has no attribute 'dtype'

@@ -1,0 +1,8 @@
+{"time":"2025-01-19T09:19:22.620129313Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T09:19:22.620147054Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_091922-j5wpllbr/logs/debug-core.log"}
+{"time":"2025-01-19T09:19:23.432600247Z","level":"INFO","msg":"created new stream","id":"j5wpllbr"}
+{"time":"2025-01-19T09:19:23.432649458Z","level":"INFO","msg":"stream: started","id":"j5wpllbr"}
+{"time":"2025-01-19T09:19:23.432674169Z","level":"INFO","msg":"handler: started","stream_id":"j5wpllbr"}
+{"time":"2025-01-19T09:19:23.432674359Z","level":"INFO","msg":"writer: Do: started","stream_id":"j5wpllbr"}
+{"time":"2025-01-19T09:19:23.432689219Z","level":"INFO","msg":"sender: started","stream_id":"j5wpllbr"}
+{"time":"2025-01-19T09:19:23.669389682Z","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,9 @@
+{"time":"2025-01-19T07:57:51.01518929Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T07:57:51.01520016Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_075751-kxw0gof7/logs/debug-core.log"}
+{"time":"2025-01-19T07:57:51.226193878Z","level":"INFO","msg":"created new stream","id":"kxw0gof7"}
+{"time":"2025-01-19T07:57:51.22624416Z","level":"INFO","msg":"stream: started","id":"kxw0gof7"}
+{"time":"2025-01-19T07:57:51.22627644Z","level":"INFO","msg":"writer: Do: started","stream_id":"kxw0gof7"}
+{"time":"2025-01-19T07:57:51.22628825Z","level":"INFO","msg":"sender: started","stream_id":"kxw0gof7"}
+{"time":"2025-01-19T07:57:51.226312461Z","level":"INFO","msg":"handler: started","stream_id":"kxw0gof7"}
+{"time":"2025-01-19T07:57:51.499497073Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T08:03:06.622737408Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}

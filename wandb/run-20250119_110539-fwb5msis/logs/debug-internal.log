@@ -1,0 +1,16 @@
+{"time":"2025-01-19T11:05:39.453269759Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-19T11:05:39.453281149Z","level":"INFO","msg":"created symlink","path":"/home/ubuntu/alphacoder-latest/distributed_gkd/wandb/run-20250119_110539-fwb5msis/logs/debug-core.log"}
+{"time":"2025-01-19T11:05:39.765187472Z","level":"INFO","msg":"created new stream","id":"fwb5msis"}
+{"time":"2025-01-19T11:05:39.765237053Z","level":"INFO","msg":"stream: started","id":"fwb5msis"}
+{"time":"2025-01-19T11:05:39.765253653Z","level":"INFO","msg":"writer: Do: started","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:39.765272974Z","level":"INFO","msg":"handler: started","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:39.765265203Z","level":"INFO","msg":"sender: started","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:39.994647706Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T11:05:50.835099677Z","level":"INFO","msg":"stream: closing","id":"fwb5msis"}
+{"time":"2025-01-19T11:05:50.835133347Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T11:05:50.83570723Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T11:05:51.228188259Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T11:05:51.38084498Z","level":"INFO","msg":"handler: closed","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:51.38086828Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:51.380923192Z","level":"INFO","msg":"sender: closed","stream_id":"fwb5msis"}
+{"time":"2025-01-19T11:05:51.380939812Z","level":"INFO","msg":"stream: closed","id":"fwb5msis"}
